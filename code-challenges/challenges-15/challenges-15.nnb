@@ -1,0 +1,67 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## Hacker Rank\n\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\nFollow the links below:\nread them carefully and solve them then copy-paste your solution below in Code Block"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Required**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Equality In An Array](https://www.hackerrank.com/challenges/equality-in-a-array/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function equalizeArray(arr) {\n    let max = 0;\n    let newArr = arr.reduce((acc, value, index) => {\n        acc[value] = (acc[value] || 0) + 1;\n\n       if ( acc[value] > max && (max = acc[value]));\n          //console.log(max) ;\n        return acc;\n    }, []);\n\n    return arr.length - max;\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Optional**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Halloween Sale](https://www.hackerrank.com/challenges/halloween-sale/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function howManyGames(p, d, m, s) {\n    // p =20, the cost for first one\n   // minuse by d= 3 each iteration\n   // minimum cost m =6\n   // the budget s =70\n   let countGame =0;\n         while(s >= p) {\n             countGame++;\n             s -= p;\n             p = Math.max(p-d, m);\n         }\n   return countGame ;\n }"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Sherlock And Squares](https://www.hackerrank.com/challenges/sherlock-and-squares/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function squares(a, b) {\n    var lower= Math.ceil(Math.sqrt(a))\n    var higher = Math.floor(Math.sqrt(b))\n\n    if(lower>higher)\n    return 0\n    \n   var count=0;\n   for(var i =lower ;i<=higher ;i++){\n       if (lower<=i*i<=higher){\n           count++\n       }\n   }\n   return count ;\n\n}"
+            ],
+            "outputs": []
+        }
+    ]
+}
