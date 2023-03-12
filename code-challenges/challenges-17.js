@@ -14,29 +14,29 @@
 // Output: [50, 41, 32, 23, 14, 5, -4, 5, 14, 23, 32, 41, 50]
 //
 
-let arr =[] ;
-const recursionPattern = (int1, int2, currant = int1, increase = false) => {
-  // Base case
-  if (currant <= 0) {
-    increase = true;
+// let arr =[] ;
+// const recursionPattern = (int1, int2, currant = int1, increase = false) => {
+//   // Base case
+//   if (currant <= 0) {
+//     increase = true;
     
-  }
+//   }
   
-  if (currant > int1) {
-    return;
-  }
-arr.push(currant);
-  // Recursive case
-  if (!increase) {
-    currant -= int2;
-  } else {
-    currant += int2;
-  }
+//   if (currant > int1) {
+//     return;
+//   }
+// arr.push(currant);
+//   // Recursive case
+//   if (!increase) {
+//     currant -= int2;
+//   } else {
+//     currant += int2;
+//   }
     
-  recursionPattern(int1, int2,currant, increase);
+//   recursionPattern(int1, int2,currant, increase);
   
-  return arr ;
-}
+//   return arr ;
+// }
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
