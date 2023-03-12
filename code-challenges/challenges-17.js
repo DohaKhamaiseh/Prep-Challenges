@@ -15,7 +15,7 @@
 //
 
 // let arr =[] ;
-// const recursionPattern = (int1, int2, currant = int1, increase = false) => {
+ const recursionPattern = (int1, int2, currant = int1, increase = false) => {
 //   // Base case
 //   if (currant <= 0) {
 //     increase = true;
@@ -36,7 +36,7 @@
 //   recursionPattern(int1, int2,currant, increase);
   
 //   return arr ;
-// }
+}
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
